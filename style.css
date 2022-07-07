@@ -10,3 +10,13 @@ img, picture {
   width: 100%;
   display: block;
 }
+
+body {
+  background: linear-gradient(180deg, #FDBB63 0%, #FDA26B 20%, #FC8862 40%, #eb6859 60%, #FC7174 80%);
+  background-repeat: no-repeat;
+  height: 1000px;
+}
+
+h1 {
+  color: white;
+}

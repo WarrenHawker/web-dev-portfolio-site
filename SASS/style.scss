@@ -18,3 +18,14 @@ img, picture {
 }
 
 //global styles
+body {
+  // background: rgb(237,187,48);
+  // background: linear-gradient(180deg, rgba(237,187,48,1) 0%, rgba(176,90,13,1) 50%, rgba(72,12,4,1) 100%);
+  background: linear-gradient(180deg, #FDBB63 0%, #FDA26B 20%, #FC8862 40%, #eb6859 60%, #FC7174 80% );
+  background-repeat: no-repeat;
+  height: 1000px
+}
+
+h1 {
+  color: $color-primary;
+}
