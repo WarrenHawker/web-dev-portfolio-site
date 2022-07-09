@@ -1,0 +1,17 @@
+footer {
+  nav {
+    display: flex;
+    ul {
+      display: flex;
+      gap: 2em;
+      li {
+        a {
+          color: #ffffff;
+          font-size: 20px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}

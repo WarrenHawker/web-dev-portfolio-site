@@ -1,9 +1,20 @@
 header {
+  display: flex;
+  border-bottom: 1px solid #ddd; 
   nav {
+    padding: 30px 0;
+    margin-bottom: 30px;
+    
+    display: flex;
     ul {
+      display: flex;
+      gap: 2em;
       li {
         a {
-          
+          font-size: 20px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          color: #ffffff;
         }
       }
     }

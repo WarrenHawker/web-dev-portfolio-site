@@ -1,2 +1,42 @@
-$color-primary: white;
-$color-secondary: black;
+// $colors-summer: (
+//   font-primary: #ffffa0,
+//   font-secondary: #ffffff,
+//   background: linear-gradient(135deg, #f0821e 0%,#e13a3e 35%,#c74895 100%) fixed
+// );
+
+// $colors-winter: (
+//   font-primary: #7f0836,
+//   font-secondary: #ffffff,
+//   background: linear-gradient(180deg, #FFB4C4 0%, #FECA98 100%) fixed
+// );
+
+$themes: (
+  summer: (
+    textPrimary: #ffffa0,
+    textSecondary: #ffffff,
+    backgroundColor: linear-gradient(135deg, #f0821e 0%,#e13a3e 35%,#c74895 100%) fixed
+  ),
+  winter: (
+    textPrimary: #7f0836,
+    textSecondary: #ffffff,
+    backgroundColor: linear-gradient(180deg, #FFB4C4 0%, #FECA98 100%) fixed
+  )
+);
+
+@mixin themify($themes) {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}

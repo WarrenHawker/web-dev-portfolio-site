@@ -18,14 +18,58 @@ img, picture {
 }
 
 //global styles
-body {
-  // background: rgb(237,187,48);
-  // background: linear-gradient(180deg, rgba(237,187,48,1) 0%, rgba(176,90,13,1) 50%, rgba(72,12,4,1) 100%);
-  background: linear-gradient(180deg, #FDBB63 0%, #FDA26B 20%, #FC8862 40%, #eb6859 60%, #FC7174 80% );
-  background-repeat: no-repeat;
-  height: 1000px
+main {
+  font-family: $font-primary;
+  @include themify($themes) {
+    background: themed('backgroundColor');
+  }
+  height: 100vh;
+}
+
+section {
+  padding: 0 2rem;
 }
 
 h1 {
-  color: $color-primary;
+  font-weight: $font-bold;
+  font-size: 40px;
+  @include themify($themes) {
+    color: themed('textPrimary');
+  }
+}
+
+h2 {
+  font-weight: $font-bold;
+  font-size: 32px;
+  @include themify($themes) {
+    color: themed('textSecondary');
+  }
+}
+
+p {
+  font-weight: $font-reg;
+  @include themify($themes) {
+    color: themed('textSecondary');
+  }
+}
+
+.light {
+  font-weight: $font-light;
+}
+
+.thin {
+  font-weight: $font-thin;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: $font-reg;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
 }
