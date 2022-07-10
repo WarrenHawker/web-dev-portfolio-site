@@ -8,10 +8,6 @@
   box-sizing: border-box;
 }
 
-body, h1, h2, h3, p {
-  margin: 0;
-}
-
 img, picture {
   width: 100%;
   display: block;
@@ -22,11 +18,12 @@ html {
 }
 
 //global styles
-main {
+
+body, h1, h2, h3, p, header {
+  margin: 0;
   font-family: $font-primary;
-  @include themify($themes) {
-    background: themed('backgroundColor');
-  }
+  position: relative;
+  transition: color 1s linear;
 }
 
 section {
@@ -77,3 +74,4 @@ a {
 a:hover, a:focus {
   text-decoration: underline;
 }
+
