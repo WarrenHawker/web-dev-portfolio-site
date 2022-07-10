@@ -17,17 +17,21 @@ img, picture {
   display: block;
 }
 
+html {
+  scroll-behavior: smooth
+}
+
 //global styles
 main {
   font-family: $font-primary;
   @include themify($themes) {
     background: themed('backgroundColor');
   }
-  height: 100vh;
 }
 
 section {
   padding: 0 2rem;
+  height: 500px;
 }
 
 h1 {
