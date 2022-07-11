@@ -19,11 +19,16 @@ html {
 
 //global styles
 
-body, h1, h2, h3, p, header {
+main {
+  position: relative;
+  @include themify($themes) {
+    background: themed('backgroundColor');
+  }
+}
+
+body, h1, h2, h3, p, header, footer {
   margin: 0;
   font-family: $font-primary;
-  position: relative;
-  transition: color 1s linear;
 }
 
 section {

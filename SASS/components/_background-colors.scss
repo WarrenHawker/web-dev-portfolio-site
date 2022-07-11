@@ -2,22 +2,20 @@
 
 .background-colors-summer {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  height: 100%;
+  width: 100%;
   background-image: map-get($themes, "summer", "backgroundColor");
-  transition: opacity 1s linear;
+  transition: opacity 0.75s linear;
   opacity: 1;
+  height: 100%;
 }
 
 .background-colors-winter {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  height: 100%;
+  width: 100%;
   background-image: map-get($themes, "winter", "backgroundColor");
-  transition: opacity 1s linear;
+  transition: opacity 0.75s linear;
   opacity: 0;
+  height: 100%;
 }
