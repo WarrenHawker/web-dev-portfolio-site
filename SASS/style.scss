@@ -21,14 +21,12 @@ html {
 
 main {
   position: relative;
-  @include themify($themes) {
-    background: themed('backgroundColor');
-  }
 }
 
 body, h1, h2, h3, p, header, footer {
   margin: 0;
   font-family: $font-primary;
+  transition: color 0.75s linear;
 }
 
 section {

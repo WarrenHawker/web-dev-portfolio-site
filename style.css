@@ -79,22 +79,24 @@ footer nav ul li a {
 
 .background-colors-summer {
   position: absolute;
-  height: 100%;
-  width: 100%;
   background-image: linear-gradient(135deg, #f0821e 0%, #e13a3e 35%, #c74895 100%);
   transition: opacity 0.75s linear;
   opacity: 1;
-  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .background-colors-winter {
   position: absolute;
-  height: 100%;
-  width: 100%;
   background-image: linear-gradient(180deg, #FFB4C4 0%, #FECA98 100%);
   transition: opacity 0.75s linear;
   opacity: 0;
-  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 *, *::after, *::before {
@@ -113,16 +115,11 @@ html {
 main {
   position: relative;
 }
-.theme-summer main {
-  background: linear-gradient(135deg, #f0821e 0%, #e13a3e 35%, #c74895 100%);
-}
-.theme-winter main {
-  background: linear-gradient(180deg, #FFB4C4 0%, #FECA98 100%);
-}
 
 body, h1, h2, h3, p, header, footer {
   margin: 0;
   font-family: "Lato", sans-serif;
+  transition: color 0.75s linear;
 }
 
 section {
