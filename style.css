@@ -103,8 +103,7 @@ footer nav ul li a {
   box-sizing: border-box;
 }
 
-img, picture {
-  width: 100%;
+img, picture, iframe {
   display: block;
 }
 

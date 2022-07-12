@@ -1,10 +1,10 @@
-const checkbox = document.getElementById('checkbox');
+const themeToggle = document.getElementById('checkbox');
 const bgSummer = document.getElementsByClassName('background-colors-summer')[0];
 const bgWinter = document.getElementsByClassName('background-colors-winter')[0];
 const mainElement = document.getElementsByTagName('main')[0];
 let pageHeight = mainElement.getBoundingClientRect();
 
-checkbox.addEventListener('change', () => {
+themeToggle.addEventListener('change', () => {
 	if (checkbox.checked) {
 		document.body.classList.add('theme-winter');
 		document.body.classList.remove('theme-summer');
