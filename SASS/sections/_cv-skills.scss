@@ -1,0 +1,36 @@
+.technologies-container {
+  display: grid;
+  grid-template-areas: 
+    "html html"
+    "react next"
+    "word mern";
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  gap: 20px;
+}
+
+.html-css-js-img {
+  grid-area: html;
+  margin: auto;
+}
+
+.react-img {
+  grid-area: react;
+  margin: auto;
+}
+
+.next-img {
+  grid-area: next;
+  margin: auto;
+}
+
+.wordpress-img {
+  grid-area: word;
+  margin: auto;
+}
+
+.mern-img {
+  grid-area: mern;
+  margin: auto;
+}
