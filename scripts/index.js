@@ -1,8 +1,6 @@
-const themeToggle = document.getElementById('checkbox');
-const bgSummer = document.getElementsByClassName('background-colors-summer')[0];
-const bgWinter = document.getElementsByClassName('background-colors-winter')[0];
-
-themeToggle.addEventListener('change', () => {
+function toggleTheme() {
+	const bgSummer = document.getElementsByClassName('background-colors-summer')[0];
+	const bgWinter = document.getElementsByClassName('background-colors-winter')[0];
 	if (checkbox.checked) {
 		document.body.classList.add('theme-winter');
 		document.body.classList.remove('theme-summer');
@@ -14,7 +12,7 @@ themeToggle.addEventListener('change', () => {
 		bgSummer.style.opacity = 1;
 		bgWinter.style.opacity = 0;
 	}
-});
+}
 
 function setBackgroundSize() {
 	const mainElement = document.getElementsByTagName('main')[0];
@@ -23,6 +21,12 @@ function setBackgroundSize() {
 	bgSummer.style.height = `${pageHeight.height}px`;
 	bgWinter.style.height = `${pageHeight.height}px`;
 }
+
+export { toggleTheme, setBackgroundSize };
+
+//toggle button to change theme colours
+const themeToggle = document.getElementById('checkbox');
+themeToggle.addEventListener('change', toggleTheme);
 
 //set initial background height on page load
 window.onload = setBackgroundSize;
