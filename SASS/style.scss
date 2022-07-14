@@ -25,7 +25,7 @@ main {
   margin: auto;
 }
 
-body, h1, h2, h3, p, header, footer {
+body, h1, h2, p, header, footer {
   margin: 0;
   font-family: $font-primary;
   transition: color 0.75s linear;
@@ -56,6 +56,7 @@ p {
   @include themify($themes) {
     color: themed('textSecondary');
   }
+  font-size: 24px;
 }
 
 .light {

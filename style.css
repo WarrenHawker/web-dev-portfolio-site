@@ -103,8 +103,8 @@ footer nav ul li a {
 .technologies-container {
   display: grid;
   grid-template-areas: "html html" "react next" "word mern";
-  width: 90%;
-  max-width: 500px;
+  width: 100%;
+  max-width: 600px;
   margin: auto;
   gap: 20px;
 }
@@ -163,7 +163,7 @@ main {
   margin: auto;
 }
 
-body, h1, h2, h3, p, header, footer {
+body, h1, h2, p, header, footer {
   margin: 0;
   font-family: "Lato", sans-serif;
   transition: color 0.75s linear;
@@ -197,6 +197,7 @@ h2 {
 
 p {
   font-weight: 400;
+  font-size: 24px;
 }
 .theme-summer p {
   color: #ffffff;
