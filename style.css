@@ -96,6 +96,10 @@ footer nav ul li a {
   bottom: 0;
 }
 
+#home {
+  text-align: center;
+}
+
 .technologies-container {
   display: grid;
   grid-template-areas: "html html" "react next" "word mern";
@@ -154,6 +158,9 @@ html {
 
 main {
   position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 body, h1, h2, h3, p, header, footer {
@@ -163,7 +170,7 @@ body, h1, h2, h3, p, header, footer {
 }
 
 section {
-  padding: 0 2rem;
+  padding: 2rem;
 }
 
 h1 {
