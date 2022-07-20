@@ -5,3 +5,16 @@ $font-thin: 100;
 $font-light: 300;
 $font-reg: 400;
 $font-bold: 900;
+
+$font-sizes: (
+  desktop: (
+    "header": 40px,
+    "sub-header": 32px,
+    "text": 24px,
+  ), 
+  mobile: (
+    "header": 36px,
+    "sub-header": 24px,
+    "text": 20px,
+  )
+);

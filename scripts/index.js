@@ -1,6 +1,7 @@
+const bgSummer = document.getElementsByClassName('background-colors-summer')[0];
+const bgWinter = document.getElementsByClassName('background-colors-winter')[0];
+
 function toggleTheme() {
-	const bgSummer = document.getElementsByClassName('background-colors-summer')[0];
-	const bgWinter = document.getElementsByClassName('background-colors-winter')[0];
 	if (checkbox.checked) {
 		document.body.classList.add('theme-winter');
 		document.body.classList.remove('theme-summer');
@@ -21,8 +22,6 @@ function setBackgroundSize() {
 	bgSummer.style.height = `${pageHeight.height}px`;
 	bgWinter.style.height = `${pageHeight.height}px`;
 }
-
-export { toggleTheme, setBackgroundSize };
 
 //toggle button to change theme colours
 const themeToggle = document.getElementById('checkbox');

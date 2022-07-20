@@ -10,6 +10,7 @@
 
 img, picture, iframe {
   display: block;
+  width: 100%;
 }
 
 html {
@@ -36,27 +37,27 @@ section {
 }
 
 h1 {
+  font-size: map-get($font-sizes, "mobile", "header");
   font-weight: $font-bold;
-  font-size: 40px;
   @include themify($themes) {
     color: themed('textPrimary');
   }
 }
 
 h2 {
+  font-size: map-get($font-sizes, "mobile", "sub-header");
   font-weight: $font-bold;
-  font-size: 32px;
   @include themify($themes) {
     color: themed('textSecondary');
   }
 }
 
 p {
+  font-size: map-get($font-sizes, "mobile", "text");
   font-weight: $font-reg;
   @include themify($themes) {
     color: themed('textSecondary');
   }
-  font-size: 24px;
 }
 
 .light {
