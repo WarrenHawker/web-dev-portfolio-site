@@ -1,26 +1,28 @@
+import '../SASS/style.scss';
+
 const bgSummer = document.getElementsByClassName('background-colors-summer')[0];
 const bgWinter = document.getElementsByClassName('background-colors-winter')[0];
 
 function toggleTheme() {
-	if (checkbox.checked) {
-		document.body.classList.add('theme-winter');
-		document.body.classList.remove('theme-summer');
-		bgSummer.style.opacity = 0;
-		bgWinter.style.opacity = 1;
-	} else if (!checkbox.checked) {
-		document.body.classList.add('theme-summer');
-		document.body.classList.remove('theme-winter');
-		bgSummer.style.opacity = 1;
-		bgWinter.style.opacity = 0;
-	}
+  if (checkbox.checked) {
+    document.body.classList.add('theme-winter');
+    document.body.classList.remove('theme-summer');
+    bgSummer.style.opacity = 0;
+    bgWinter.style.opacity = 1;
+  } else if (!checkbox.checked) {
+    document.body.classList.add('theme-summer');
+    document.body.classList.remove('theme-winter');
+    bgSummer.style.opacity = 1;
+    bgWinter.style.opacity = 0;
+  }
 }
 
 function setBackgroundSize() {
-	const mainElement = document.getElementsByTagName('main')[0];
-	let pageHeight = mainElement.getBoundingClientRect();
-	pageHeight = mainElement.getBoundingClientRect();
-	bgSummer.style.height = `${pageHeight.height}px`;
-	bgWinter.style.height = `${pageHeight.height}px`;
+  const mainElement = document.getElementsByTagName('main')[0];
+  let pageHeight = mainElement.getBoundingClientRect();
+  pageHeight = mainElement.getBoundingClientRect();
+  bgSummer.style.height = `${pageHeight.height}px`;
+  bgWinter.style.height = `${pageHeight.height}px`;
 }
 
 //toggle button to change theme colours

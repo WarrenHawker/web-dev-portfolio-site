@@ -6,6 +6,7 @@
 //basic css reset
 *, *::after, *::before {
   box-sizing: border-box;
+  transition: color 0.75s linear;
 }
 
 img, picture, iframe {
@@ -26,10 +27,9 @@ main {
   margin: auto;
 }
 
-body, h1, h2, p, header, footer {
+body {
   margin: 0;
   font-family: $font-primary;
-  transition: color 0.75s linear;
 }
 
 section {
