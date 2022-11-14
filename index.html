@@ -40,7 +40,7 @@
       <img src="" alt="">
       <p>Striving for excellence in everything I do</p>
       <a href="#work">View my projects</a>
-      <a href="https://github.com/WanderingMist/web-dev-portfolio-site">View code for this website</a>
+      <a href="https://github.com/WanderingMist/web-dev-portfolio-site" target="_blank">View code for this website (opens in new tab)</a>
     </section>
 
     <section id="about">
@@ -75,7 +75,7 @@
         <img class="mern-img" src="./assets/mern-stack.png" alt="">
         <img class="wordpress-img" src="./assets/wordpress.png" alt="">
       </div>
-      <button>click here to view and download my CV</button>
+      <button id="btn-show-cv">click here to view and download my CV</button>
     </section>
 
     <section id="work">
@@ -86,15 +86,15 @@
           <h3>Anime Recommendations app (React)</h3>
           <img src="" alt="">
           <p></p>
-          <a href="#" target="_blank">view demo (opens in a new tab)</a>
-          <a href="#" target="_blank">view code (github)</a>
+          <a href="https://marvelous-seahorse-eba3b3.netlify.app/" target="_blank">view demo (opens in a new tab)</a>
+          <a href="https://github.com/WarrenHawker/anime-recommendations-app" target="_blank">view code (github)</a>
         </div>
         <div class="project-container">
           <h3>Lifeguard Quiz app (React)</h3>
           <img src="" alt="">
           <p></p>
-          <a href="#" target="_blank">view demo (opens in a new tab)</a>
-          <a href="#" target="_blank">view code (github)</a>
+          <a href="https://ubiquitous-flan-680032.netlify.app/" target="_blank">view demo (opens in a new tab)</a>
+          <a href="https://github.com/WarrenHawker/lifeguard-quiz-app" target="_blank">view code (github)</a>
         </div>
       </div>
 
@@ -145,6 +145,15 @@
       </nav>
     </footer>
   </main>
+  <section id="cv-overlay">
+    <article class="cv-container">
+      <i class="fa fa-window-close" id="cv-close"></i>
+      <div class="cv-sub-container">
+        <iframe src="cv-test.pdf"></iframe>
+        <a href="./cv-test.pdf" download="Warren_Hawker_CV" target="_blank">Download CV</a>
+      </div>
+    </article>
+  </section>
   <script type="module" src="./scripts/index.js"></script>
 </body>
 </html>

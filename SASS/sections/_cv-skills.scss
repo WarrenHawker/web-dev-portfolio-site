@@ -1,46 +1,49 @@
-.technologies-container {
-  display: grid;
-  grid-template-areas: 
-    "html html"
-    "react word"
-    "mern mern";
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
-  gap: 20px;
+#cv-skills {
+  .technologies-container {
+    display: grid;
+    grid-template-areas: 
+      "html html"
+      "react word"
+      "mern mern";
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    gap: 20px;
+  
+    .html-css-js-img {
+      grid-area: html;
+      margin: auto;
+      width: 100%;
+      height: auto;
+    }
+    
+    .react-img {
+      grid-area: react;
+      margin: auto;
+      width: 100%;
+      height: auto;
+    }
+    
+    .next-img {
+      grid-area: next;
+      margin: auto;
+      width: 100%;
+      height: auto;
+    }
+    
+    .wordpress-img {
+      grid-area: word;
+      margin: auto;
+      width: 100%;
+      height: auto;
+    }
+    
+    .mern-img {
+      grid-area: mern;
+      margin: auto;
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
-.html-css-js-img {
-  grid-area: html;
-  margin: auto;
-  width: 100%;
-  height: auto;
-}
-
-.react-img {
-  grid-area: react;
-  margin: auto;
-  width: 100%;
-  height: auto;
-}
-
-.next-img {
-  grid-area: next;
-  margin: auto;
-  width: 100%;
-  height: auto;
-}
-
-.wordpress-img {
-  grid-area: word;
-  margin: auto;
-  width: 100%;
-  height: auto;
-}
-
-.mern-img {
-  grid-area: mern;
-  margin: auto;
-  width: 100%;
-  height: auto;
-}
