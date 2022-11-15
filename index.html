@@ -40,7 +40,7 @@
       <img src="" alt="">
       <p>Striving for excellence in everything I do</p>
       <a href="#work">View my projects</a>
-      <a href="https://github.com/WanderingMist/web-dev-portfolio-site" target="_blank">View code for this website (opens in new tab)</a>
+      <a href="https://github.com/WanderingMist/web-dev-portfolio-site" target="_blank">View code for this website (github)</a>
     </section>
 
     <section id="about">
@@ -70,10 +70,10 @@
       <h1>CV and skills</h1>
       <h2>I have experience working with the following technologies</h2>
       <div class="technologies-container">
-        <img class="html-css-js-img" src="./assets/html-css-js.png" alt="">
-        <img class="react-img" src="./assets/react.png" alt="" >
-        <img class="mern-img" src="./assets/mern-stack.png" alt="">
-        <img class="wordpress-img" src="./assets/wordpress.png" alt="">
+        <img class="html-css-js-img" src="./public/images/html-css-js.png" alt="">
+        <img class="react-img" src="./public/images/react.png" alt="" >
+        <img class="mern-img" src="./public/images/mern-stack.png" alt="">
+        <img class="wordpress-img" src="./public/images/wordpress.png" alt="">
       </div>
       <button id="btn-show-cv">click here to view and download my CV</button>
     </section>
@@ -85,14 +85,35 @@
         <div class="project-container">
           <h3>Anime Recommendations app (React)</h3>
           <img src="" alt="">
-          <p></p>
+          <p>
+            I got sick of scrolling through page after page of website recommendations 
+            looking for my next anime binge, so I created an app to help me. The app uses the 
+            <a href="https://jikan.moe/" target="_blank">Jikan API</a> that gets information from the MyAnimeList website. 
+          </p>
+          <p>
+            This project was the first time I've implemented page pagination, which was
+            very important because depending on the filter settings, you could receive thousands
+            of results from the API. 
+          </p>
           <a href="https://marvelous-seahorse-eba3b3.netlify.app/" target="_blank">view demo (opens in a new tab)</a>
           <a href="https://github.com/WarrenHawker/anime-recommendations-app" target="_blank">view code (github)</a>
         </div>
         <div class="project-container">
           <h3>Lifeguard Quiz app (React)</h3>
           <img src="" alt="">
-          <p></p>
+          <p>
+            Lifeguards in the UK need to renew their qualification every 2 years, which involves
+            taking a theory exam. As someone who trains Lifeguards, this meant I would have
+            to print out pages and pages of mock exam papers for candidates. Needless to say
+            this is bad for the environment and wastes a lot of time, so I made an app to 
+            replace all those pieces of paper. 
+          </p>
+          <p>
+            For this project, my main focus was on making it as easy as possible for users to
+            see their results and learn from their mistakes. The biggest challenge was
+            correctly implementing the timers, which as it turns out is much harder in React 
+            than in vanilla JS. 
+          </p>
           <a href="https://ubiquitous-flan-680032.netlify.app/" target="_blank">view demo (opens in a new tab)</a>
           <a href="https://github.com/WarrenHawker/lifeguard-quiz-app" target="_blank">view code (github)</a>
         </div>
@@ -105,7 +126,7 @@
           <img src="" alt="">
           <p></p>
           <a href="#" target="_blank">view demo (opens in a new tab)</a>
-          <a href="#" target="_blank">view code (github)</a>
+          <a href="https://github.com/WarrenHawker/budgeting-app-mern" target="_blank">view code (github)</a>
         </div>
       </div>
 
@@ -113,21 +134,21 @@
         <h2>Wordpress sites</h2>
         <div class="project-container">
           <h3>Brighton Rope Website (Wordpress)</h3>
-          <img src="./assets/brightonrope.png" alt="">
+          <img src="./public/images/brightonrope.png" alt="">
           <p>Bespoke website with a custom wordpress theme for a local rope group. The Site includes a dynamic event listings page and dynamic booking form using AJAX requests to get up to date information from MySQL database. Getting this all to work was a huge challenge as it was the first time I had worked with AJAX queries to do dynamic fetches that didn't refresh the current page. The backend admin portion of the website keeps track of event participants and allows the admins to check the status of payments and other actions for each event.</p>
           <a href="https://brightonrope.co.uk" target="_blank">view site (opens in a new tab)</a>
         </div>
   
         <div class="project-container">
           <h3>Neil Coley Band Website (Wordpress)</h3>
-          <img src="./assets/neilcoley2.png" alt="">
+          <img src="./public/images/neilcoley2.png" alt="">
           <p>Bespoke website with a custom wordpress theme for my dad's jazz band. The hardest part of this project was getting the background image on each page to fade smoothly into the background colour without clipping, and allowing the site admins to change the background images at will without it breaking. Getting the band members gallery to look good with a variety of image sizes was also a challenge.</p> 
           <a href="https://neilcoleyband.co.uk" target="_blank">view site (opens in a new tab)</a>
         </div>
   
         <div class="project-container">
           <h3>Tunbridge Wells Diving Club Website (Wordpress)</h3>
-          <img src="./assets/twdiving.png" alt="">
+          <img src="./public/images/twdiving.png" alt="">
           <p>Bespoke website with a custom wordpress theme for a local springboard diving club. It was hard coming up with a suitable colour scheme for this website that wasn't just plain blue and white (most diving clubs all use the same colour scheme for their websites!). Overall I'm very happy with the look of this site that makes it stand out from the crowd.</p>
           <a href="https://twdiving.co.uk" target="_blank">view site (opens in a new tab)</a>
         </div>
@@ -150,7 +171,7 @@
       <i class="fa fa-window-close" id="cv-close"></i>
       <div class="cv-sub-container">
         <iframe src="cv-test.pdf"></iframe>
-        <a href="./cv-test.pdf" download="Warren_Hawker_CV" target="_blank">Download CV</a>
+        <a href="./public/cv-test.pdf" download="Warren_Hawker_CV" target="_blank">Download CV</a>
       </div>
     </article>
   </section>
