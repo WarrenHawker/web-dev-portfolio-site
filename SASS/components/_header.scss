@@ -1,12 +1,14 @@
 @use '../abstracts/colors' as *;
 
 header {
+  width: 100%;
   transition: all 0.75s linear;
   display: flex;
   flex-wrap: wrap;
   border-bottom: 1px solid;
   @include themify($themes) {
     color: themed('textSecondary');
+    background: themed('backgroundColor');
   }
   margin-bottom: 30px; 
   padding: 30px 0;
@@ -14,7 +16,7 @@ header {
     display: flex;
     ul {
       display: flex;
-      gap: 2em;
+      gap: 1em;
       li {
         a {
           text-transform: uppercase;
@@ -26,4 +28,13 @@ header {
       }
     }
   }
+}
+
+header.sticky {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }

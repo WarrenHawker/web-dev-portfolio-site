@@ -1,3 +1,4 @@
 import '../SASS/style.scss';
-import './background-toggle';
+import './background';
 import './cv';
+import './navbar';
