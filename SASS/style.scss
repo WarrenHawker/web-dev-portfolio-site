@@ -6,7 +6,7 @@
 //basic css reset
 *, *::after, *::before {
   box-sizing: border-box;
-  transition: color 0.75s linear;
+  transition: all 0.75s linear;
 }
 
 img, picture, iframe {
@@ -34,6 +34,22 @@ body {
 
 section {
   padding: 2rem;
+  h1 {
+    margin-top: 0;
+  }
+}
+
+section::after {
+  display: block;
+  content: '';
+  width: 50%;
+  margin: auto;
+  padding-top: 2em;
+  height: 20px;
+  border-bottom: 2px solid;
+  @include themify($themes) {
+    border-color: themed('textSecondary');
+  }
 }
 
 h1 {

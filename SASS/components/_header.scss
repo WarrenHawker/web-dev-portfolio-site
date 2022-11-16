@@ -18,13 +18,15 @@ header {
       display: flex;
       gap: 1em;
       li {
-        a {
+        cursor: pointer;
           text-transform: uppercase;
           letter-spacing: 1px;
           @include themify($themes) {
             color: themed('textSecondary');
           }
-        }
+      }
+      li:hover, li:focus {
+        text-decoration: underline;
       }
     }
   }

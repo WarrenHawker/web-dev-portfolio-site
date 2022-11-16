@@ -1,3 +1,5 @@
+@use '../abstracts/colors' as *;
+
 .theme-toggle {
   padding-left: 20px;
   margin: auto;
@@ -17,8 +19,12 @@
     padding: 5px;
     position: relative;
     transform: scale(1.5);
-    border: 1px black solid;
+    border: 1px solid;
     cursor: pointer;
+    @include themify($themes) {
+      border-color: themed('textSecondary');
+    }
+    transition: border-color 0.75s linear;
   }
   
   .ball {

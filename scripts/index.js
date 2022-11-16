@@ -1,4 +1,4 @@
 import '../SASS/style.scss';
-import './background';
+import './theme';
 import './cv';
 import './navbar';

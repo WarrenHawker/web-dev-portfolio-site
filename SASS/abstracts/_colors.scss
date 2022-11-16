@@ -2,12 +2,16 @@ $themes: (
   summer: (
     "textPrimary": #ffffa0,
     "textSecondary": #ffffff,
-    "backgroundColor": linear-gradient(135deg, #f0821e 0%,#e13a3e 35%,#c74895 100%)
+    "backgroundColor": linear-gradient(135deg, #f0821e 0%,#e13a3e 35%,#c74895 100%),
+    "textContrast": #000000,
+    "hoverBackground": #c74895,
   ),
   winter: (
     "textPrimary": #7f0836,
     "textSecondary": black,
-    "backgroundColor": linear-gradient(180deg, #FFB4C4 0%, #FECA98 100%)
+    "backgroundColor": linear-gradient(180deg, #FFB4C4 0%, #FECA98 100%),
+    "textContrast": #ffffff,
+    "hoverBackground": #FFB4C4,
   )
 );
 

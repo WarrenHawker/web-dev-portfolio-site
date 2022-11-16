@@ -1,0 +1,51 @@
+@use '../abstracts/colors' as *;
+
+a {
+    @include themify($themes) {
+        color: themed('hoverBackground');
+      }
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2.5em;
+}
+
+.btn {
+    padding: 1em;
+    border: 2px solid;
+    border-radius: 2em;
+    @include themify($themes) {
+        border-color: themed('textSecondary');
+      }
+    transform: scale(1);
+    transition: scale 0.5s linear;
+    font-weight: bold;
+}
+
+.btn-primary {
+    @include themify($themes) {
+        background-color: themed('textPrimary');
+        border-color: themed('textContrast');
+        color: themed('textContrast');
+      }
+    font-weight: bold;
+}
+
+.btn-secondary {
+    @include themify($themes) {
+        color: themed('textSecondary');
+      }
+}
+
+.btn:hover, .btn:focus {
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.btn-cv {
+    font-size: 1.5em;
+}
