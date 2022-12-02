@@ -24,11 +24,16 @@
 
         .project-container {
             height: 600px;
-            position: relative;
             cursor: pointer;
             border-radius: 1em;
             margin-bottom: 2em;
             overflow: hidden;
+
+            .project-inner-container {
+                height: 500px;
+                position: relative;
+                border-radius: 1em;
+            }
             .project-img {
                 height: 100%;
                 background-repeat: no-repeat;
@@ -45,7 +50,7 @@
             }
            .project-info {
                 position: absolute;
-                top: 2.5em;
+                top: 0;
                 bottom: 0;
                 left: 0;
                 right: 0;
@@ -55,7 +60,7 @@
                 justify-content: center;
                 background-color: rgba(255, 255, 255, 0.3);
                 border-radius: 1em;
-                
+                             
                 p {
                     color: black !important;
                     padding: 0 1em ;
@@ -64,13 +69,10 @@
                 }
            } 
         }
-        .project-container:hover, .project-container:focus {
-            .project-img {
-                filter: blur(8px);
-            }
-            
+        .project-container:hover, .project-container:focus {           
             .project-info {
                 opacity: 1;
+                backdrop-filter: blur(8px);
             }
         }
     }
