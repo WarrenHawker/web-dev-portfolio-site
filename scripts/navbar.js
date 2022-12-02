@@ -1,17 +1,4 @@
 const navbar = document.getElementsByTagName('header')[0];
-let sticky = navbar.offsetTop;
-
-function stickyHeader() {
-  if (window.pageYOffset > sticky) {
-    navbar.classList.add('sticky');
-  } else {
-    navbar.classList.remove('sticky');
-  }
-}
-
-window.onscroll = function () {
-  stickyHeader();
-};
 
 const scrollPage = (e) => {
   console.log(e.target.dataset.position);

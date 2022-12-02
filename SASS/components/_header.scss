@@ -1,6 +1,12 @@
 @use '../abstracts/colors' as *;
 
 header {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
   width: 100%;
   transition: all 0.75s linear;
   display: flex;
@@ -30,13 +36,4 @@ header {
       }
     }
   }
-}
-
-header.sticky {
-  z-index: 10;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
 }
