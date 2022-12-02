@@ -21,7 +21,7 @@ a {
         border-color: themed('textSecondary');
       }
     transform: scale(1);
-    transition: scale 0.5s linear;
+    transition: transform 0.3s linear;
     font-weight: bold;
 }
 
@@ -47,5 +47,5 @@ a {
 }
 
 .btn-cv {
-    font-size: 1.5em;
+    font-size: 1.25em;
 }

@@ -32,9 +32,3 @@ $themes: (
 @function themed($key) {
   @return map-get($theme-map, $key);
 }
-
-// possible links and highlight colors
-
-// #fefdb0
-
-// #fbcc3f

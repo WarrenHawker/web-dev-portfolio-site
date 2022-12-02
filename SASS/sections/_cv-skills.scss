@@ -1,12 +1,20 @@
 #cv-skills {
+  h2 {
+    margin-top: 0;
+  }
+
+  h1 {
+    margin-bottom: 0.25em;
+  }
+
   .technologies-container {
     display: grid;
     grid-template-areas: 
       "html html"
       "react word"
       "mern mern";
-    width: 50%;
-    max-width: 600px;
+    width: 40%;
+    max-width: 300px;
     margin: auto;
     gap: 20px;
   
