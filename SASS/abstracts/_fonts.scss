@@ -1,11 +1,12 @@
 $font-primary: 'Lato', sans-serif;
 
-
+//font weights
 $font-thin: 100;
 $font-light: 300;
 $font-reg: 400;
 $font-bold: 900;
 
+//font sizes
 $font-sizes: (
   desktop: (
     "header": 40px,
@@ -13,8 +14,13 @@ $font-sizes: (
     "text": 24px,
   ), 
   mobile: (
-    "header": 36px,
-    "sub-header": 24px,
-    "text": 20px,
+    "header": 24px,
+    "sub-header": 20px,
+    "text": 16px,
   )
 );
+
+//font line heights
+$line-header: 32px;
+$line-sub-header: 28px;
+$line-text: 26px;

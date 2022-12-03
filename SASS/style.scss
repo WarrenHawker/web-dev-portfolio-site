@@ -55,6 +55,7 @@ section::after {
 h1 {
   font-size: map-get($font-sizes, "mobile", "header");
   font-weight: $font-bold;
+  line-height: $line-header;
   @include themify($themes) {
     color: themed('textPrimary');
   }
@@ -63,6 +64,7 @@ h1 {
 h2 {
   font-size: map-get($font-sizes, "mobile", "sub-header");
   font-weight: $font-bold;
+  line-height: $line-sub-header;
   @include themify($themes) {
     color: themed('textSecondary');
   }
@@ -71,6 +73,7 @@ h2 {
 p {
   font-size: map-get($font-sizes, "mobile", "text");
   font-weight: $font-reg;
+  line-height: $line-text;
   @include themify($themes) {
     color: themed('textSecondary');
   }
