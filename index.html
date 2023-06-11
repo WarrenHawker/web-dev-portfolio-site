@@ -71,12 +71,19 @@
     <section id="cv-skills">
       <h1>CV and skills</h1>
       <h2>I have experience working with the following technologies</h2>
-      <div class="technologies-container">
-        <img class="html-css-js-img" src="./public/images/html-css-js.png" alt="">
-        <img class="react-img" src="./public/images/react.png" alt="" >
-        <img class="mern-img" src="./public/images/Nextjs-logo.svg" alt="">
-        <img class="wordpress-img" src="./public/images/wordpress.png" alt="">
-      </div>
+      <article class="technologies-outer-container">
+        <div class="technologies-container frontend">
+          <img class="html-css-js-img" src="./public/images/html-css-js.png" alt="">
+          <img class="react-img" src="./public/images/react.png" alt="" >
+          <img class="TS-img" src="./public/images/typescript.png" alt="" >
+        </div>
+        <div class="technologies-container fullstack">
+          <img class="next-img" src="./public/images/Nextjs-logo.svg" alt="">
+          <img class="wordpress-img" src="./public/images/wordpress.png" alt="">
+          <img class="mern-img" src="./public/images/mern-stack.png" alt="">
+        </div>
+      </article>
+     
       <div class="button-container" id="work-nav-position">
         <button class="btn btn-primary btn-cv" id="btn-show-cv">view my CV</button>
       </div>
@@ -86,95 +93,127 @@
       <div class="section-header">
         <h1>My Work and Projects</h1>
         <p>Hover over the images for project details and links</p>
-    </div>
-      <div class="project-category-container">
-        <h1 class="category-header">Frontend projects</h1>
-        <div class="project-container"> 
-          <h2>Anime Recommendations app (React)</h2>
-          <div class="project-inner-container">
-            <div class="project-img" style="background-image: url(./public/images/anime-app.png)"></div>
-            <div class="project-info">
-              <p>
-                I got sick of scrolling through page after page of "top 10 anime" recommendation lists 
-                looking for my next anime binge, and never finding a decent match. So I created an app to help me. The app uses the 
-                <a href="https://jikan.moe/" target="_blank">Jikan API</a> that gets information from the MyAnimeList website. 
-              <br><br>
-                This project was the first time I've implemented page pagination, which was
-                very important because depending on the filter settings, you could receive thousands
-                of results from the API. 
-              </p>
-              <div class="button-container">
-                <a class="btn btn-primary" href="https://anime-recommendations.netlify.app/" target="_blank"><i class="fa-solid fa-globe"></i> Demo</a>
-                <a class="btn btn-secondary" href="https://github.com/WarrenHawker/anime-recommendations-app" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-container">
-          <h2>Lifeguard Quiz app (React)</h2>
-          <div class="project-inner-container">
-            <div class="project-img" style="background-image: url(./public/images/lifeguard-quiz-app.png)"></div>
-            <div class="project-info">
-              <p>
-                Lifeguards in the UK need to renew their qualification every 2 years, which involves
-                taking a theory exam. As someone who trains Lifeguards, this meant I would have
-                to print out pages and pages of mock exam papers for candidates. Needless to say
-                this is bad for the environment and wastes a lot of time, so I made an app to 
-                replace all those pieces of paper. 
+      </div>
+        <div class="project-category-container">
+          <h1 class="category-header">Frontend projects</h1>
+          <div class="project-container"> 
+            <h2>Anime Recommendations (React)</h2>
+            <div class="project-inner-container">
+              <div class="project-img" style="background-image: url(./public/images/anime-app.png)"></div>
+              <div class="project-info">
+                <p>
+                  I got sick of scrolling through page after page of "top 10 anime" recommendation lists 
+                  looking for my next anime binge, and never finding a decent match. So I created an app to help me. The app uses the 
+                  <a href="https://jikan.moe/" target="_blank">Jikan API</a> that gets information from the MyAnimeList website. 
                 <br><br>
-                The biggest challenge was correctly implementing the timers, which as it turns 
-                out is much harder in React than in vanilla JS. 
+                  This project was the first time I've implemented page pagination, which was
+                  very important because depending on the filter settings, you could receive thousands
+                  of results from the API. 
+                </p>
+                <div class="button-container">
+                  <a class="btn btn-primary" href="https://anime-recommendations.netlify.app/" target="_blank"><i class="fa-solid fa-globe"></i> Demo</a>
+                  <a class="btn btn-secondary" href="https://github.com/WarrenHawker/anime-recommendations-app" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-container">
+            <h2>Lifeguard Quiz (React)</h2>
+            <div class="project-inner-container">
+              <div class="project-img" style="background-image: url(./public/images/lifeguard-quiz-app.png)"></div>
+              <div class="project-info">
+                <p>
+                  Lifeguards in the UK need to renew their qualification every 2 years, which involves
+                  taking a theory exam. As someone who trains Lifeguards, this meant I would have
+                  to print out pages and pages of mock exam papers for candidates. Needless to say
+                  this is bad for the environment and wastes a lot of time, so I made an app to 
+                  replace all those pieces of paper. 
+                  <br><br>
+                  The biggest challenge was correctly implementing the timers, which as it turns 
+                  out is much harder in React than in vanilla JS. 
+                </p>
+                <div class="button-container">
+                  <a class="btn btn-primary" href="https://nplq-quiz.netlify.app/" target="_blank"><i class="fa-solid fa-globe"></i> Demo</a>
+                  <a class="btn btn-secondary" href="https://github.com/WarrenHawker/lifeguard-quiz-app" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-container">
+          <h2>BooleBots (React + TS)</h2>
+          <div class="project-inner-container">
+            <div class="project-img" style="background-image: url(./public/images/boole-bots.png)"></div>
+            <div class="project-info">
+              <p>
+                My first group project. We were tasked with creating a game for teaching people how boolean operators work. 
+                The user configures up to 4 bots to do battle in an arena. When one of the bots collides with another, their
+                boolean operators and values are calculated to determine the winner. 
+                <br><br>
+                As this was my first time working with other people, it was initially a struggle because we all had slightly 
+                different coding styles. We managed to overcome this though and I'm very happy with the end result. 
+                <br>
+                The project took us 6 weeks to complete. 
               </p>
               <div class="button-container">
-                <a class="btn btn-primary" href="https://nplq-quiz.netlify.app/" target="_blank"><i class="fa-solid fa-globe"></i> Demo</a>
-                <a class="btn btn-secondary" href="https://github.com/WarrenHawker/lifeguard-quiz-app" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                <a class="btn btn-primary" href="https://gentle-semifreddo-84c257.netlify.app/" target="_blank"><i class="fa-solid fa-globe"></i> Demo</a>
+                <a class="btn btn-secondary" href="https://github.com/chingu-voyages/v44-tier2-team-27" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
               </div>
           </div>
         </div>
       </div>
-
-      <div class="project-container">
-        <h2>Artist Website (NextJS & Contentful)</h2>
-        <div class="project-inner-container">
-          <div class="project-img" style="background-image: url(./public/images/carole-website-image.png)"></div>
-          <div class="project-info">
-            <p>
-              A commissioned project for a family member who is wanting to sell their artwork. 
-              Since they wanted to be able to add new art pieces in the future, I decided to 
-              build the app in NextJS and use Contentful for the CMS. This was the first time
-              working to a client's specification, with the goal of accommadating their wishes as
-              much as possible.
-              <br><br>
-              The client's choice of colours was tricky to work with but I feel it turned out quite well, 
-              and I'm very happy with the frontpage layout. 
-            </p>
-            <div class="button-container">
-              <a class="btn btn-primary" href="https://carole-website-contentful.vercel.app/" target="_blank"><i class="fa-solid fa-globe"></i> Demo</a>
-              <a class="btn btn-secondary" href="https://github.com/WarrenHawker/carole-website-contentful" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
-            </div>
-        </div>
-      </div>
-    </div>
       </div>
 
-      <!-- <div class="project-category-container">
+      <div class="project-category-container">
         <h1 class="category-header">Fullstack projects</h2>
-        <div class="project-container">
-          <h2>Teacher Tips Repository (MERN stack)</h2>
-          <h3>WIP - coming soon!</h3>
-          <div class="project-inner-container">
-            <div class="project-img" style="background-image: url()"></div>
-            <div class="project-info">
-              <p></p>
-              <div class="button-container">
-                <a class="btn btn-primary" href="#" target="_blank"><i class="fa-solid fa-globe"></i> Demo</a>
-                <a class="btn btn-secondary" href="https://github.com/WarrenHawker/budgeting-app-mern" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
-              </div>
+          <div class="project-container">
+            <h2>Artist Website (NextJS & Contentful)</h2>
+            <div class="project-inner-container">
+              <div class="project-img" style="background-image: url(./public/images/carole-website-image.png)"></div>
+              <div class="project-info">
+                <p>
+                  A commissioned project for a family member who is wanting to sell their artwork. 
+                  Since they wanted to be able to add new art pieces in the future, I decided to 
+                  build the app in NextJS and use Contentful for the CMS. This was the first time
+                  working to a client's specification, with the goal of accommadating their wishes as
+                  much as possible.
+                  <br><br>
+                  The client's choice of colours was tricky to work with but I feel it turned out quite well, 
+                  and I'm very happy with the frontpage layout. 
+                </p>
+                <div class="button-container">
+                  <a class="btn btn-primary" href="https://carole-website-contentful.vercel.app/" target="_blank"><i class="fa-solid fa-globe"></i> Demo</a>
+                  <a class="btn btn-secondary" href="https://github.com/WarrenHawker/carole-website-contentful" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                </div>
             </div>
           </div>
         </div>
-      </div> -->
+
+        <div class="project-container">
+          <h2>Expenses Tracker (MERN + TS)</h2>
+          <div class="project-inner-container">
+            <div class="project-img" style="background-image: url(./public/images/expenses-tracker.png)"></div>
+            <div class="project-info">
+              <p>
+                I needed a convenient way to track my spending. However all the pre-built apps I could find were way
+                too overkill for what I needed, so I built my own which I now use every day. This app uses the MERN stack 
+                with Typescript on the frontend.
+                <br><br>
+                It includes user authentication, allows the user to add new expenses and then see their total expenses for 
+                each week or each month. 
+                <br><br>
+                Right now it's pretty basic, but it does exactly what I need it to. I hope to add more features to it in 
+                the future. 
+              </p>
+              <div class="button-container">
+                <a class="btn btn-primary" href="https://food-expenses.netlify.app/" target="_blank"><i class="fa-solid fa-globe"></i> Demo</a>
+                <a class="btn btn-secondary" href="https://github.com/WarrenHawker/food-expenses-tracker" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+              </div>
+          </div>
+        </div>
+      </div>
+      </div>
 
       <div class="project-category-container">
         <h1 class="category-header">Wordpress sites</h1>
@@ -244,9 +283,9 @@
     <article class="cv-container">
       <i class="fa fa-window-close" id="cv-close"></i>
       <div class="cv-sub-container">
-        <iframe src="warren-hawker-cv-2023.pdf"></iframe>
+        <iframe src="warrenhawker-cv-programmer-2023.pdf"></iframe>
         <div class="button-container">
-          <a class="btn btn-primary" href="./public/warren-hawker-cv-2023.pdf" download="Warren_Hawker_CV" target="_blank">Download CV</a>
+          <a class="btn btn-primary" href="warrenhawker-cv-programmer-2023.pdf" download="Warren_Hawker_CV" target="_blank">Download CV</a>
         </div>
       </div>
     </article>
