@@ -1,99 +1,135 @@
 @use '../abstracts/colors' as *;
 
 #work {
-    h3 {
-        color: #ffffff;
-        text-align: center;
+  h3 {
+    color: #ffffff;
+    text-align: center;
+  }
+  .section-header {
+    h1,
+    p {
+      margin: 0;
     }
-    .section-header {
-        h1, p {
-            margin: 0;
-        }
-    }
-    * {
-        transition: all 0.5s;
-    }
-    .project-category-container {
-        .category-header {
-            @include themify($themes) {
-                color: themed('textSecondary') !important;
-              }
-            text-align: center;
-            margin-top: 1em;
-        }
+  }
+  * {
+    transition: all 0.5s;
+  }
 
-        .project-container {
-            height: 600px;
-            cursor: pointer;
-            border-radius: 1em;
-            margin-bottom: 2em;
-            overflow: hidden;
+  h3 {
+    @include themify($themes) {
+      color: themed('textPrimary') !important;
+    }
+  }
 
-            .project-inner-container {
-                height: 500px;
-                position: relative;
-                border-radius: 1em;
-            }
-            .project-img {
-                height: 100%;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-                border-radius: 1em;
-            }
-            h2 {
-                text-align: center;
-                margin-top: 0;
-                @include themify($themes) {
-                    color: themed('textPrimary') !important;
-                  }
-            }
-           .project-info {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                opacity: 0;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                background-color: rgba(255, 255, 255, 0.3);
-                border-radius: 1em;
-                             
-                p {
-                    color: black !important;
-                    padding: 0 1em ;
-                    line-height: 1.5em;
-                    overflow: auto;
-                }
-           } 
-        }
-        .project-container:hover, .project-container:focus {           
-            .project-info {
-                opacity: 1;
-                backdrop-filter: blur(8px);
-            }
-        }
+  .category-header {
+    @include themify($themes) {
+      color: themed('textSecondary') !important;
     }
-    .fa-globe, .fa-github {
-        margin-right: 0.5em;
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  .project-container {
+    height: 600px;
+    cursor: pointer;
+    border-radius: 1em;
+    margin-bottom: 2em;
+    overflow: hidden;
+
+    .project-inner-container {
+      height: 500px;
+      position: relative;
+      border-radius: 1em;
     }
-    .btn-secondary {
-        color: black;
-        border-color: black;
+    .project-img {
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border-radius: 1em;
     }
+    h2 {
+      text-align: center;
+      margin-top: 0;
+      @include themify($themes) {
+        color: themed('textPrimary') !important;
+      }
+    }
+    .project-info {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 1em;
+
+      p {
+        color: black !important;
+        padding: 0 1em;
+        line-height: 1.5em;
+        overflow: auto;
+      }
+    }
+  }
+  .project-container:hover,
+  .project-container:focus {
+    .project-info {
+      opacity: 1;
+      backdrop-filter: blur(8px);
+    }
+  }
+}
+.fa-globe,
+.fa-github {
+  margin-right: 0.5em;
+}
+.project-container .btn-secondary {
+  color: black;
+  border-color: black;
+}
+
+#work::after {
+  grid-column: 1/-1;
+}
+
+.filter-buttons button {
+  opacity: 0.5;
+}
+
+.filter-buttons button:hover,
+.filter-buttons button:focus {
+  opacity: 1;
+}
+
+.filter-buttons button.active {
+  opacity: 1;
 }
 
 @media screen and (min-width: 900px) {
-    .project-category-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2em;
+  section#work {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+    .section-header {
+      grid-column: 1/-1;
     }
-    .category-header {
-        grid-column: 1/-1;
-    }
-    
-}
+  }
 
+  .filter-buttons {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+    column-gap: 2em;
+    flex-wrap: wrap;
+
+    h3 {
+      width: 100%;
+      margin: 0 auto 0.5em auto;
+    }
+  }
+}

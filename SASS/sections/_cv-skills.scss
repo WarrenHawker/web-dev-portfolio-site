@@ -20,9 +20,9 @@
   }
 
   .technologies-container.fullstack {
-    grid-template-areas: 
-    "next word"
-    "mern mern";
+    grid-template-areas:
+      'next word'
+      'mern mern';
     .next-img {
       grid-area: next;
       margin: auto;
@@ -45,31 +45,32 @@
   }
 
   .technologies-container.frontend {
-    grid-template-areas: 
-      "html html"
-      "react TS";
-  
+    grid-template-areas:
+      'html html'
+      'react TS';
+
     .html-css-js-img {
       grid-area: html;
       margin: auto;
       width: 100%;
       height: auto;
     }
-    
+
     .react-img {
       grid-area: react;
       margin: auto;
       width: 100%;
+      max-height: 140px;
+      border-radius: 10%;
       height: auto;
-    } 
-    
+    }
+
     .TS-img {
       grid-area: TS;
       margin: auto;
       width: 100%;
       height: auto;
     }
-    
   }
 }
 
@@ -78,4 +79,3 @@
     flex-direction: column;
   }
 }
-

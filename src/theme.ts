@@ -32,7 +32,13 @@ const themeToggle = <HTMLInputElement>document.getElementById('checkbox');
 themeToggle.addEventListener('change', toggleTheme);
 
 //set initial background height on page load
-window.onload = setBackgroundSize;
+window.onload = () => {
+  setBackgroundSize();
+  document.body.classList.add('theme-winter');
+  document.body.classList.remove('theme-summer');
+  bgSummer.style.opacity = '0';
+  bgWinter.style.opacity = '1';
+};
 
 //change background height when window is resized
 window.addEventListener('resize', setBackgroundSize);
