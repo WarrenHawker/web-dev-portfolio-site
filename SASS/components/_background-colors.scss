@@ -2,9 +2,9 @@
 
 .background-colors-summer {
   position: absolute;
-  background-image: map-get($themes, "summer", "backgroundColor");
+  background-image: map-get($themes, 'summer', 'backgroundColor');
   transition: opacity 0.75s linear;
-  opacity: 1;
+  opacity: 0;
   top: 0;
   left: 0;
   right: 0;
@@ -13,12 +13,11 @@
 
 .background-colors-winter {
   position: absolute;
-  background-image: map-get($themes, "winter", "backgroundColor");
+  background-image: map-get($themes, 'winter', 'backgroundColor');
   transition: opacity 0.75s linear;
-  opacity: 0;
+  opacity: 1;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  
 }

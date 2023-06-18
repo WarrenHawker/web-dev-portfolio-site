@@ -17,25 +17,37 @@ header {
     color: themed('textSecondary');
     background: themed('backgroundColor');
   }
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
   padding: 10px 0 20px 0;
-  nav {   
+  nav {
     display: flex;
     ul {
       display: flex;
-      margin-top: 0;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
       gap: 1em;
       li {
         cursor: pointer;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          @include themify($themes) {
-            color: themed('textSecondary');
-          }
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        @include themify($themes) {
+          color: themed('textSecondary');
+        }
       }
-      li:hover, li:focus {
+      li:hover,
+      li:focus {
         text-decoration: underline;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    padding: 0.5em;
+    ul {
+      padding-left: 0.5em;
     }
   }
 }

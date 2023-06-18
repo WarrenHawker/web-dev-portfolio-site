@@ -6,12 +6,12 @@ const bgWinter = <HTMLElement>(
 );
 
 function toggleTheme() {
-  if (themeToggle.checked) {
+  if (!themeToggle.checked) {
     document.body.classList.add('theme-winter');
     document.body.classList.remove('theme-summer');
     bgSummer.style.opacity = '0';
     bgWinter.style.opacity = '1';
-  } else if (!themeToggle.checked) {
+  } else if (themeToggle.checked) {
     document.body.classList.add('theme-summer');
     document.body.classList.remove('theme-winter');
     bgSummer.style.opacity = '1';
@@ -34,10 +34,6 @@ themeToggle.addEventListener('change', toggleTheme);
 //set initial background height on page load
 window.onload = () => {
   setBackgroundSize();
-  document.body.classList.add('theme-winter');
-  document.body.classList.remove('theme-summer');
-  bgSummer.style.opacity = '0';
-  bgWinter.style.opacity = '1';
 };
 
 //change background height when window is resized
