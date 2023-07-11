@@ -1,11 +1,21 @@
-const overlay = <HTMLElement>document.getElementById('cv-overlay');
+const overlay = <HTMLElement>document.getElementById('cv');
 const showCVButton = <HTMLElement>document.getElementById('btn-show-cv');
-const closeCVButton = <HTMLElement>document.getElementById('cv-close');
+const closeCVButton = <HTMLElement>document.getElementById('overlay-close');
 
 showCVButton.addEventListener('click', () => {
-  overlay.classList.add('active');
+  overlay.classList.add('open');
+  overlay.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center',
+  });
+  showCVButton.style.display = 'none';
 });
 
 closeCVButton.addEventListener('click', () => {
-  overlay.classList.remove('active');
+  showCVButton.style.display = 'block';
+  overlay.classList.remove('open');
+  showCVButton.scrollIntoView({
+    behavior: 'smooth',
+    block: 'center',
+  });
 });

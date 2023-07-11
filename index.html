@@ -1,472 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Warren Hawker Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/0de87d0496.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body class="theme-winter">
-    <div class="background-colors-summer"></div>
-    <div class="background-colors-winter"></div>
-    <main id="home-nav-position">
-      <header>
-        <nav>
-          <ul>
-            <li class="nav-links" data-position="home-nav-position">Home</li>
-            <li class="nav-links" data-position="about-nav-position">
-              About me
-            </li>
-            <li class="nav-links" data-position="skills-nav-position">
-              CV and skills
-            </li>
-            <li class="nav-links" data-position="work-nav-position">My work</li>
-          </ul>
-        </nav>
-        <div class="theme-toggle">
-          <input type="checkbox" class="checkbox" id="checkbox"/>
-          <label for="checkbox" class="label">
-            <i class="far fa-snowflake"></i>
-            <i class="fas fa-sun"></i>
-            <div class="ball"></div>
-          </label>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warren Hawker Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/0de87d0496.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="theme-winter">
+  <div class="background-colors-summer"></div>
+  <div class="background-colors-winter"></div>
+  <main id="home-nav-position">
+    <header>
+      <nav>
+        <ul>
+          <li class="nav-links" data-position="home-nav-position">Home</li>
+          <li class="nav-links" data-position="about-nav-position">
+            About me
+          </li>
+          <li class="nav-links" data-position="skills-nav-position">
+            CV and skills
+          </li>
+          <li class="nav-links" data-position="work-nav-position">My work</li>
+        </ul>
+      </nav>
+      <div class="theme-toggle">
+        <input type="checkbox" class="checkbox" id="checkbox" />
+        <label for="checkbox" class="label">
+          <i class="far fa-snowflake"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+    </header>
+
+    <section id="home">
+      <h1>Warren Hawker</h1>
+      <h2 id="about-nav-position">Web Developer</h2>
+      <img src="" alt="" />
+      <p>Striving for excellence in everything I do</p>
+      <div class="button-container">
+        <div class="btn btn-primary nav-links" data-position="work-nav-position">
+          View my projects
         </div>
-      </header>
+        <a class="btn btn-secondary" href="https://github.com/WanderingMist/web-dev-portfolio-site" target="_blank">View
+          code for this website</a>
+      </div>
+    </section>
 
-      <section id="home">
-        <h1>Warren Hawker</h1>
-        <h2 id="about-nav-position">Web Developer</h2>
-        <img src="" alt="" />
-        <p>Striving for excellence in everything I do</p>
-        <div class="button-container">
-          <div
-            class="btn btn-primary nav-links"
-            data-position="work-nav-position"
-          >
-            View my projects
-          </div>
-          <a
-            class="btn btn-secondary"
-            href="https://github.com/WanderingMist/web-dev-portfolio-site"
-            target="_blank"
-            >View code for this website</a
-          >
+    <section id="about">
+      <h1>About me</h1>
+      <h2>
+        Pleased to meet you. My name is Warren, I'm a Web Developer from the
+        UK.
+      </h2>
+      <p>
+        For the past 14 years I have worked in the Leisure industry as an educator
+        of one form or another, but now I'm looking for a career change. I've been
+        interested in programming for many years, but it wasn't until covid that
+        I got into web development, when my dad asked me to build his jazz band a
+        new website. This was my first introduction to web development, and I
+        haven't looked back since!
+      </p>
+
+      <p>
+        In my current job I am surrounded by people who rely on computers to do their work
+        but aren't very "tech-savy", which results in them getting slowed down by the software
+        they are being told to use. Don't get me wrong, the software they have is very cleaver,
+        but not very intuitive which causes a great deal of frustration in the office.
+      </p>
+
+      <p>
+        Because of this, my design philosophy is to build clean, minimal UIs that
+        anyone can use. I have found that sometimes the smallest details have a huge
+        impact on the overall user experience. When I'm working on a project, I try
+        to put myself in the shoes of the people I currently work with; People with a
+        great many things to do, and no time to waste figuring out some finnicky piece
+        of software.
+      </p>
+
+      <p id="skills-nav-position">
+        I am passionate, curious and always strive for excellence in everything
+        that I do. I love learning new things, sharing my skills and building
+        tools that will benefit people. Making something that others can enjoyably
+        use is worth all the hard work it takes to make it.
+      </p>
+    </section>
+
+    <section id="cv-skills">
+      <h1>CV and skills</h1>
+      <h2>I have experience working with the following technologies</h2>
+      <article class="technologies-outer-container">
+        <div class="technologies-container frontend">
+          <img class="html-css-js-img" src="./images/html-css-js.png" alt="" />
+          <img class="react-img" src="./images/react-js-new.png" alt="" />
+          <img class="TS-img" src="./images/typescript.png" alt="" />
         </div>
-      </section>
-
-      <section id="about">
-        <h1>About me</h1>
-        <h2>
-          Pleased to meet you. My name is Warren, I'm a Web Developer from the
-          UK.
-        </h2>
-        <p>
-          For the past 14 years I have worked in the Leisure industry as an educator 
-          of one form or another, but now I'm looking for a career change. I've been 
-          interested in programming for many years, but it wasn't until covid that 
-          I got into web development, when my dad asked me to build his jazz band a 
-          new website. This was my first introduction to web development, and I 
-          haven't looked back since!
-        </p>
-
-        <p>
-          In my current job I am surrounded by people who rely on computers to do their work
-          but aren't very "tech-savy", which results in them getting slowed down by the software
-          they are being told to use. Don't get me wrong, the software they have is very cleaver,
-          but not very intuitive which causes a great deal of frustration in the office.   
-        </p>
-
-        <p>
-          Because of this, my design philosophy is to build clean, minimal UIs that 
-          anyone can use. I have found that sometimes the smallest details have a huge 
-          impact on the overall user experience. When I'm working on a project, I try 
-          to put myself in the shoes of the people I currently work with; People with a 
-          great many things to do, and no time to waste figuring out some finnicky piece 
-          of software. 
-        </p>
-
-        <p id="skills-nav-position">
-          I am passionate, curious and always strive for excellence in everything 
-          that I do. I love learning new things, sharing my skills and building 
-          tools that will benefit people. Making something that others can enjoyably 
-          use is worth all the hard work it takes to make it.
-        </p>
-      </section>
-
-      <section id="cv-skills">
-        <h1>CV and skills</h1>
-        <h2>I have experience working with the following technologies</h2>
-        <article class="technologies-outer-container">
-          <div class="technologies-container frontend">
-            <img
-              class="html-css-js-img"
-              src="./images/html-css-js.png"
-              alt=""
-            />
-            <img class="react-img" src="./images/react-js-new.png" alt="" />
-            <img class="TS-img" src="./images/typescript.png" alt="" />
-          </div>
-          <div class="technologies-container fullstack">
-            <img class="next-img" src="./images/Nextjs-logo.svg" alt="" />
-            <img class="wordpress-img" src="./images/wordpress.png" alt="" />
-            <img class="mern-img" src="./images/mern-stack-2.png" alt="" />
-          </div>
-        </article>
-
-        <div class="button-container" id="work-nav-position">
-          <button class="btn btn-primary btn-cv" id="btn-show-cv">
-            view my CV
-          </button>
-        </div>
-      </section>
-
-      <section id="work">
-        <div class="section-header">
-          <h1>My Work and Projects</h1>
-          <p>Hover over the images for project details and links</p>
-        </div>
-        <div class="filter-buttons">
-          <h3>Click the buttons below to filter projects by technology</h3>
-          <button class="btn btn-primary active">All Projects</button>
-          <button class="btn btn-primary">React</button>
-          <button class="btn btn-primary">Typescript</button>
-          <button class="btn btn-primary">NextJS</button>
-          <button class="btn btn-primary">Wordpress</button>
-          <button class="btn btn-primary">MERN</button>
-        </div>
-        <div class="project-container" data-technology="React">
-          <h2>Anime Recommendations (React)</h2>
-          <div class="project-inner-container">
-            <div
-              class="project-img"
-              style="background-image: url(./images/anime-app.png)"
-            ></div>
-            <div class="project-info">
-              <p>
-                I got sick of scrolling through page after page of "top 10
-                anime" recommendation lists looking for my next anime binge, and
-                never finding a decent match. So I created an app to help me.
-                The app uses the
-                <a href="https://jikan.moe/" target="_blank">Jikan API</a> that
-                gets information from the MyAnimeList website. <br /><br />
-                This project was the first time I've implemented page
-                pagination, which was very important because depending on the
-                filter settings, you could receive thousands of results from the
-                API.
-              </p>
-              <div class="button-container">
-                <a
-                  class="btn btn-primary"
-                  href="https://anime-recommendations.netlify.app/"
-                  target="_blank"
-                  ><i class="fa-solid fa-globe"></i> Demo</a
-                >
-                <a
-                  class="btn btn-secondary"
-                  href="https://github.com/WarrenHawker/anime-recommendations-app"
-                  target="_blank"
-                  ><i class="fa-brands fa-github"></i> Code</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-container" data-technology="React">
-          <h2>Lifeguard Quiz (React)</h2>
-          <div class="project-inner-container" >
-            <div
-              class="project-img"
-              style="background-image: url(./images/lifeguard-quiz-app.png)"
-            ></div>
-            <div class="project-info">
-              <p>
-                Lifeguards in the UK need to renew their qualification every 2
-                years, which involves taking a theory exam. As someone who
-                trains Lifeguards, this meant I would have to print out pages
-                and pages of mock exam papers for candidates. Needless to say
-                this is bad for the environment and wastes a lot of time, so I
-                made an app to replace all those pieces of paper.
-                <br /><br />
-                The biggest challenge was correctly implementing the timers,
-                which as it turns out is much harder in React than in vanilla
-                JS.
-              </p>
-              <div class="button-container">
-                <a
-                  class="btn btn-primary"
-                  href="https://nplq-quiz.netlify.app/"
-                  target="_blank"
-                  ><i class="fa-solid fa-globe"></i> Demo</a
-                >
-                <a
-                  class="btn btn-secondary"
-                  href="https://github.com/WarrenHawker/lifeguard-quiz-app"
-                  target="_blank"
-                  ><i class="fa-brands fa-github"></i> Code</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-container" data-technology="React Typescript">
-          <h2>BooleBots (React + TS)</h2>
-          <div class="project-inner-container">
-            <div
-              class="project-img"
-              style="background-image: url(./images/boole-bots.png)"
-            ></div>
-            <div class="project-info">
-              <p>
-                My first group project. We were tasked with creating a game for
-                teaching people how boolean operators work. The user configures
-                up to 4 bots to do battle in an arena. When one of the bots
-                collides with another, their boolean operators and values are
-                calculated to determine the winner.
-                <br /><br />
-                As this was my first time working with other people, it was
-                initially a struggle because we all had slightly different
-                coding styles. We managed to overcome this though and I'm very
-                happy with the end result.
-                <br />
-                The project took us 6 weeks to complete.
-              </p>
-              <div class="button-container">
-                <a
-                  class="btn btn-primary"
-                  href="https://gentle-semifreddo-84c257.netlify.app/"
-                  target="_blank"
-                  ><i class="fa-solid fa-globe"></i> Demo</a
-                >
-                <a
-                  class="btn btn-secondary"
-                  href="https://github.com/chingu-voyages/v44-tier2-team-27"
-                  target="_blank"
-                  ><i class="fa-brands fa-github"></i> Code</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-container" data-technology="NextJS">
-          <h2>Artist Website (NextJS & Contentful)</h2>
-          <div class="project-inner-container">
-            <div
-              class="project-img"
-              style="background-image: url(./images/carole-website-image.png)"
-            ></div>
-            <div class="project-info">
-              <p>
-                A commissioned project for a family member who is wanting to
-                sell their artwork. Since they wanted to be able to add new art
-                pieces in the future, I decided to build the app in NextJS and
-                use Contentful for the CMS. This was the first time working to a
-                client's specification, with the goal of accommadating their
-                wishes as much as possible.
-                <br /><br />
-                The client's choice of colours was tricky to work with but I
-                feel it turned out quite well, and I'm very happy with the
-                frontpage layout.
-              </p>
-              <div class="button-container">
-                <a
-                  class="btn btn-primary"
-                  href="https://carole-website-contentful.vercel.app/"
-                  target="_blank"
-                  ><i class="fa-solid fa-globe"></i> Demo</a
-                >
-                <a
-                  class="btn btn-secondary"
-                  href="https://github.com/WarrenHawker/carole-website-contentful"
-                  target="_blank"
-                  ><i class="fa-brands fa-github"></i> Code</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-          <div class="project-container" data-technology="MERN Typescript">
-            <h2>Expenses Tracker (MERN + TS)</h2>
-            <div class="project-inner-container">
-              <div
-                class="project-img"
-                style="background-image: url(./images/expenses-tracker.png)"
-              ></div>
-              <div class="project-info">
-                <p>
-                  I needed a convenient way to track my spending. However all
-                  the pre-built apps I could find were way too overkill for what
-                  I needed, so I built my own which I now use every day. This
-                  app uses the MERN stack with Typescript on the frontend.
-                  <br /><br />
-                  It includes user authentication, allows the user to add new
-                  expenses and then see their total expenses for each week or
-                  each month.
-                  <br /><br />
-                  Right now it's pretty basic, but it does exactly what I need
-                  it to. I hope to add more features to it in the future.
-                </p>
-                <div class="button-container">
-                  <a
-                    class="btn btn-primary"
-                    href="https://food-expenses.netlify.app/"
-                    target="_blank"
-                    ><i class="fa-solid fa-globe"></i> Demo</a
-                  >
-                  <a
-                    class="btn btn-secondary"
-                    href="https://github.com/WarrenHawker/food-expenses-tracker"
-                    target="_blank"
-                    ><i class="fa-brands fa-github"></i> Code</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-          <div class="project-container" data-technology="Wordpress">
-            <h2>Local Group Website (Wordpress)</h2>
-            <div class="project-inner-container">
-              <div
-                class="project-img"
-                style="background-image: url(./images/brightonrope.png)"
-              ></div>
-              <div class="project-info">
-                <p>
-                  Bespoke website with a custom wordpress theme for a local
-                  community group. The Site includes a dynamic event listings
-                  page and dynamic booking form using AJAX requests to get up to
-                  date information from MySQL database. <br /><br />
-                  Getting this all to work was a huge challenge as it was the
-                  first time I had worked with AJAX queries to do dynamic
-                  fetches that didn't refresh the current page. The backend
-                  admin portion of the website keeps track of event participants
-                  and allows the admins to check the status of payments and
-                  other actions for each event.
-                </p>
-                <div class="button-container">
-                  <a
-                    class="btn btn-primary"
-                    href="https://brightonrope.co.uk"
-                    target="_blank"
-                    ><i class="fa-solid fa-globe"></i> Site</a
-                  >
-                  <a
-                    class="btn btn-secondary"
-                    href="https://github.com/WarrenHawker/BrightonRope2022"
-                    target="_blank"
-                    ><i class="fa-brands fa-github"></i> Code</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-container" data-technology="Wordpress">
-            <h2>Jazz Band Website (Wordpress)</h2>
-            <div class="project-inner-container">
-              <div
-                class="project-img"
-                style="background-image: url(./images/neilcoley2.png)"
-              ></div>
-              <div class="project-info">
-                <p>
-                  Bespoke website with a custom wordpress theme for my dad's
-                  jazz band. The hardest part of this project was getting the
-                  background image on each page to fade smoothly into the
-                  background colour without clipping, and allowing the site
-                  admins to change the background images at will without it
-                  breaking. Getting the band members gallery to look good with a
-                  variety of image sizes was also a challenge.
-                </p>
-                <div class="button-container">
-                  <a
-                    class="btn btn-primary"
-                    href="https://neilcoleyband.co.uk"
-                    target="_blank"
-                    ><i class="fa-solid fa-globe"></i> Site</a
-                  >
-                  <a
-                    class="btn btn-secondary"
-                    href="https://github.com/WarrenHawker/NeilColeyCustom"
-                    target="_blank"
-                    ><i class="fa-brands fa-github"></i> Code</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-container" data-technology="Wordpress">
-            <h2>Diving Club Website (Wordpress)</h2>
-
-            <div class="project-inner-container">
-              <div
-                class="project-img"
-                style="background-image: url(./images/twdiving.png)"
-              ></div>
-              <div class="project-info">
-                <p>
-                  Bespoke website with a custom wordpress theme for a local
-                  springboard diving club. It was hard coming up with a suitable
-                  colour scheme for this website that wasn't just plain blue and
-                  white (most diving clubs all use the same colour scheme for
-                  their websites!). Overall I'm very happy with the look of this
-                  site that makes it stand out from the crowd.
-                </p>
-                <div class="button-container">
-                  <a
-                    class="btn btn-primary"
-                    href="https://twdiving.co.uk"
-                    target="_blank"
-                    ><i class="fa-solid fa-globe"></i> Site</a
-                  >
-                  <a
-                    class="btn btn-secondary"
-                    href="https://github.com/WarrenHawker/tunbridge-wells-diving-custom"
-                    target="_blank"
-                    ><i class="fa-brands fa-github"></i> Code</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-      </section>
-    </main>
-    <section id="cv-overlay">
-      <article class="cv-container">
-        <i class="fa fa-window-close" id="cv-close"></i>
-        <div class="cv-sub-container">
-          <iframe src="warrenhawker-cv-programmer-2023.pdf"></iframe>
-          <div class="button-container">
-            <a
-              class="btn btn-primary"
-              href="warrenhawker-cv-programmer-2023.pdf"
-              download="Warren_Hawker_CV"
-              target="_blank"
-              >Download CV</a
-            >
-          </div>
+        <div class="technologies-container fullstack">
+          <img class="next-img" src="./images/Nextjs-logo.svg" alt="" />
+          <img class="wordpress-img" src="./images/wordpress.png" alt="" />
+          <img class="mern-img" src="./images/mern-stack-2.png" alt="" />
         </div>
       </article>
-    </section>
-    <script type="module" src="./src/main.ts"></script>
-  </body>
-</html>
 
+      <div class="button-container" id="work-nav-position">
+        <button class="btn btn-primary btn-cv" id="btn-show-cv">
+          view my CV
+        </button>
+      </div>
+
+      <article id="cv">
+        <div class="button-container">
+          <button id="overlay-close" class="btn btn-primary">Close CV</button>
+          <a
+            class="btn btn-primary"
+            href="warren-hawker-cv.pdf"
+            download="Warren_Hawker_CV"
+            target="_blank"
+            >Download CV</a
+          >
+        </div>
+        <object data="warren-hawker-cv.pdf" type="application/pdf" width="100%" height="100%">
+        </object>
+      </article>
+    </section>
+
+    <section id="work">
+      <div class="section-header">
+        <h1>My Work and Projects</h1>
+        <p>Hover over the images for project details and links</p>
+      </div>
+      <div class="filter-buttons">
+        <h3>Click the buttons below to filter projects by technology</h3>
+        <button class="btn btn-primary active">All Projects</button>
+        <button class="btn btn-primary">React</button>
+        <button class="btn btn-primary">Typescript</button>
+        <button class="btn btn-primary">NextJS</button>
+        <button class="btn btn-primary">Wordpress</button>
+        <button class="btn btn-primary">MERN</button>
+      </div>
+      <div class="project-container" data-technology="React">
+        <h2>Anime Recommendations (React)</h2>
+        <div class="project-inner-container">
+          <div class="project-img" style="background-image: url(./images/anime-app.png)"></div>
+          <div class="project-info">
+            <p>
+              I got sick of scrolling through page after page of "top 10
+              anime" recommendation lists looking for my next anime binge, and
+              never finding a decent match. So I created an app to help me.
+              The app uses the
+              <a href="https://jikan.moe/" target="_blank">Jikan API</a> that
+              gets information from the MyAnimeList website. <br /><br />
+              This project was the first time I've implemented page
+              pagination, which was very important because depending on the
+              filter settings, you could receive thousands of results from the
+              API.
+            </p>
+            <div class="button-container">
+              <a class="btn btn-primary" href="https://anime-recommendations.netlify.app/" target="_blank"><i
+                  class="fa-solid fa-globe"></i> Demo</a>
+              <a class="btn btn-secondary" href="https://github.com/WarrenHawker/anime-recommendations-app"
+                target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-container" data-technology="React">
+        <h2>Lifeguard Quiz (React)</h2>
+        <div class="project-inner-container">
+          <div class="project-img" style="background-image: url(./images/lifeguard-quiz-app.png)"></div>
+          <div class="project-info">
+            <p>
+              Lifeguards in the UK need to renew their qualification every 2
+              years, which involves taking a theory exam. As someone who
+              trains Lifeguards, this meant I would have to print out pages
+              and pages of mock exam papers for candidates. Needless to say
+              this is bad for the environment and wastes a lot of time, so I
+              made an app to replace all those pieces of paper.
+              <br /><br />
+              The biggest challenge was correctly implementing the timers,
+              which as it turns out is much harder in React than in vanilla
+              JS.
+            </p>
+            <div class="button-container">
+              <a class="btn btn-primary" href="https://nplq-quiz.netlify.app/" target="_blank"><i
+                  class="fa-solid fa-globe"></i> Demo</a>
+              <a class="btn btn-secondary" href="https://github.com/WarrenHawker/lifeguard-quiz-app" target="_blank"><i
+                  class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-container" data-technology="React Typescript">
+        <h2>BooleBots (React + TS)</h2>
+        <div class="project-inner-container">
+          <div class="project-img" style="background-image: url(./images/boole-bots.png)"></div>
+          <div class="project-info">
+            <p>
+              My first group project. We were tasked with creating a game for
+              teaching people how boolean operators work. The user configures
+              up to 4 bots to do battle in an arena. When one of the bots
+              collides with another, their boolean operators and values are
+              calculated to determine the winner.
+              <br /><br />
+              As this was my first time working with other people, it was
+              initially a struggle because we all had slightly different
+              coding styles. We managed to overcome this though and I'm very
+              happy with the end result.
+              <br />
+              The project took us 6 weeks to complete.
+            </p>
+            <div class="button-container">
+              <a class="btn btn-primary" href="https://gentle-semifreddo-84c257.netlify.app/" target="_blank"><i
+                  class="fa-solid fa-globe"></i> Demo</a>
+              <a class="btn btn-secondary" href="https://github.com/chingu-voyages/v44-tier2-team-27" target="_blank"><i
+                  class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-container" data-technology="NextJS">
+        <h2>Artist Website (NextJS & Contentful)</h2>
+        <div class="project-inner-container">
+          <div class="project-img" style="background-image: url(./images/carole-website-image.png)"></div>
+          <div class="project-info">
+            <p>
+              A commissioned project for a family member who is wanting to
+              sell their artwork. Since they wanted to be able to add new art
+              pieces in the future, I decided to build the app in NextJS and
+              use Contentful for the CMS. This was the first time working to a
+              client's specification, with the goal of accommadating their
+              wishes as much as possible.
+              <br /><br />
+              The client's choice of colours was tricky to work with but I
+              feel it turned out quite well, and I'm very happy with the
+              frontpage layout.
+            </p>
+            <div class="button-container">
+              <a class="btn btn-primary" href="https://carole-website-contentful.vercel.app/" target="_blank"><i
+                  class="fa-solid fa-globe"></i> Demo</a>
+              <a class="btn btn-secondary" href="https://github.com/WarrenHawker/carole-website-contentful"
+                target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-container" data-technology="MERN Typescript">
+        <h2>Expenses Tracker (MERN + TS)</h2>
+        <div class="project-inner-container">
+          <div class="project-img" style="background-image: url(./images/expenses-tracker.png)"></div>
+          <div class="project-info">
+            <p>
+              I needed a convenient way to track my spending. However all
+              the pre-built apps I could find were way too overkill for what
+              I needed, so I built my own which I now use every day. This
+              app uses the MERN stack with Typescript on the frontend.
+              <br /><br />
+              It includes user authentication, allows the user to add new
+              expenses and then see their total expenses for each week or
+              each month.
+              <br /><br />
+              Right now it's pretty basic, but it does exactly what I need
+              it to. I hope to add more features to it in the future.
+            </p>
+            <div class="button-container">
+              <a class="btn btn-primary" href="https://food-expenses.netlify.app/" target="_blank"><i
+                  class="fa-solid fa-globe"></i> Demo</a>
+              <a class="btn btn-secondary" href="https://github.com/WarrenHawker/food-expenses-tracker"
+                target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="project-container" data-technology="Wordpress">
+        <h2>Local Group Website (Wordpress)</h2>
+        <div class="project-inner-container">
+          <div class="project-img" style="background-image: url(./images/brightonrope.png)"></div>
+          <div class="project-info">
+            <p>
+              Bespoke website with a custom wordpress theme for a local
+              community group. The Site includes a dynamic event listings
+              page and dynamic booking form using AJAX requests to get up to
+              date information from MySQL database. <br /><br />
+              Getting this all to work was a huge challenge as it was the
+              first time I had worked with AJAX queries to do dynamic
+              fetches that didn't refresh the current page. The backend
+              admin portion of the website keeps track of event participants
+              and allows the admins to check the status of payments and
+              other actions for each event.
+            </p>
+            <div class="button-container">
+              <a class="btn btn-primary" href="https://brightonrope.co.uk" target="_blank"><i
+                  class="fa-solid fa-globe"></i> Site</a>
+              <a class="btn btn-secondary" href="https://github.com/WarrenHawker/BrightonRope2022" target="_blank"><i
+                  class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-container" data-technology="Wordpress">
+        <h2>Jazz Band Website (Wordpress)</h2>
+        <div class="project-inner-container">
+          <div class="project-img" style="background-image: url(./images/neilcoley2.png)"></div>
+          <div class="project-info">
+            <p>
+              Bespoke website with a custom wordpress theme for my dad's
+              jazz band. The hardest part of this project was getting the
+              background image on each page to fade smoothly into the
+              background colour without clipping, and allowing the site
+              admins to change the background images at will without it
+              breaking. Getting the band members gallery to look good with a
+              variety of image sizes was also a challenge.
+            </p>
+            <div class="button-container">
+              <a class="btn btn-primary" href="https://neilcoleyband.co.uk" target="_blank"><i
+                  class="fa-solid fa-globe"></i> Site</a>
+              <a class="btn btn-secondary" href="https://github.com/WarrenHawker/NeilColeyCustom" target="_blank"><i
+                  class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-container" data-technology="Wordpress">
+        <h2>Diving Club Website (Wordpress)</h2>
+
+        <div class="project-inner-container">
+          <div class="project-img" style="background-image: url(./images/twdiving.png)"></div>
+          <div class="project-info">
+            <p>
+              Bespoke website with a custom wordpress theme for a local
+              springboard diving club. It was hard coming up with a suitable
+              colour scheme for this website that wasn't just plain blue and
+              white (most diving clubs all use the same colour scheme for
+              their websites!). Overall I'm very happy with the look of this
+              site that makes it stand out from the crowd.
+            </p>
+            <div class="button-container">
+              <a class="btn btn-primary" href="https://twdiving.co.uk" target="_blank"><i class="fa-solid fa-globe"></i>
+                Site</a>
+              <a class="btn btn-secondary" href="https://github.com/WarrenHawker/tunbridge-wells-diving-custom"
+                target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <script type="module" src="./src/main.ts"></script>
+</body>
+
+</html>

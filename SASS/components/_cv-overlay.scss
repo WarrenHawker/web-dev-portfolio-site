@@ -1,68 +1,13 @@
-#cv-overlay {
-	overflow-y: auto;
-	overflow-x: hidden;
-	z-index: 999;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: rgba(0, 0, 0, 0.7);
-	visibility: hidden;
-	opacity: 0;
-	transform: scale(1.09);
-	transition: opacity 0.5s, transform 0.5s, visibility 0.5s;
-	padding-top: 20px;
-	padding-left: 5px;
-	padding-right: 50px;
+#cv {
+  display: none;
+  height: 90vh;
+  margin-bottom: 1em;
 }
 
-#cv-overlay.active {
-	visibility: visible;
-	opacity: 1;
-	transform: scale(1);
+#cv.open {
+  display: block;
 }
 
-#cv-overlay::after {
-	border: none;
-}
-
-.cv-container {
-	background-color: #ffffff;
-	color: #000000;
-	text-align: center;
-	margin: auto;
-	border-radius: 10px;
-	position: relative;
-	width: 100%;
-	max-width: 1000px;
-	margin-top: 20px;
-	padding-bottom: 0.5em;
-}
-
-#cv-close {
-	position: absolute;
-	top: 5px;
-	right: -40px;
-	font-size: 2.1rem;
-	cursor: pointer;
-	transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
-	background-color: white;
-	color: red;
-	line-height: 0.7;
-	z-index: 999;
-}
-
-#cv-close:hover,
-#cv-close:focus {
-	transform: scale(1.2);
-}
-
-.cv-sub-container {
-    padding: 2em;
-    height: 90vh;
-    
-    iframe {
-        height: 100%;
-    }
+#cv .button-container {
+  margin-bottom: 1em;
 }
