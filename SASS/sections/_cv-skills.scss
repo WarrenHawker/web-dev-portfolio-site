@@ -7,10 +7,6 @@
     margin-bottom: 0.25em;
   }
 
-  .technologies-outer-container {
-    display: flex;
-  }
-
   .technologies-container {
     width: 100%;
     max-width: 300px;
@@ -75,8 +71,8 @@
   }
 }
 
-@media screen and (max-width: 650px) {
+@media (min-width: 650px) {
   .technologies-outer-container {
-    flex-direction: column;
+    display: flex;
   }
 }
