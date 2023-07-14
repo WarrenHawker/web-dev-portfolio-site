@@ -36,8 +36,9 @@
     .mern-img {
       grid-area: mern;
       margin: auto;
-      width: 100%;
-      height: 90%;
+      width: auto !important;
+      height: 140px;
+      border-radius: 15px;
     }
   }
 
