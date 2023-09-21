@@ -4,18 +4,22 @@
 @use 'sections' as *;
 
 //basic css reset
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   transition: all 0.75s linear;
 }
 
-img, picture, iframe {
+img,
+picture,
+iframe {
   display: block;
   width: 100%;
 }
 
 html {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
 //global styles
@@ -53,7 +57,7 @@ section::after {
 }
 
 h1 {
-  font-size: map-get($font-sizes, "mobile", "header");
+  font-size: map-get($font-sizes, 'mobile', 'header');
   font-weight: $font-bold;
   line-height: $line-header;
   @include themify($themes) {
@@ -62,7 +66,7 @@ h1 {
 }
 
 h2 {
-  font-size: map-get($font-sizes, "mobile", "sub-header");
+  font-size: map-get($font-sizes, 'mobile', 'sub-header');
   font-weight: $font-bold;
   line-height: $line-sub-header;
   @include themify($themes) {
@@ -71,7 +75,7 @@ h2 {
 }
 
 p {
-  font-size: map-get($font-sizes, "mobile", "text");
+  font-size: map-get($font-sizes, 'mobile', 'text');
   font-weight: $font-reg;
   line-height: $line-text;
   @include themify($themes) {
@@ -96,7 +100,22 @@ a {
   font-weight: $font-reg;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: underline;
 }
 
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 0.5em;
+  a {
+    font-size: 32px;
+    * {
+      @include themify($themes) {
+        color: themed('textSecondary');
+      }
+    }
+  }
+}
