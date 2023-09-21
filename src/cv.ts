@@ -1,3 +1,5 @@
+import { setBackgroundSize } from './theme';
+
 const overlay = <HTMLElement>document.getElementById('cv');
 const showCVButton = <HTMLElement>document.getElementById('btn-show-cv');
 const closeCVButton = <HTMLElement>document.getElementById('overlay-close');
@@ -9,6 +11,7 @@ showCVButton.addEventListener('click', () => {
     block: 'center',
   });
   showCVButton.style.display = 'none';
+  setBackgroundSize();
 });
 
 closeCVButton.addEventListener('click', () => {
@@ -18,4 +21,5 @@ closeCVButton.addEventListener('click', () => {
     behavior: 'smooth',
     block: 'center',
   });
+  setBackgroundSize();
 });

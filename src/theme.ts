@@ -19,7 +19,7 @@ function toggleTheme() {
   }
 }
 
-function setBackgroundSize() {
+export function setBackgroundSize() {
   const mainElement = document.getElementsByTagName('main')[0];
   let pageHeight = mainElement.getBoundingClientRect();
   pageHeight = mainElement.getBoundingClientRect();
